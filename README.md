@@ -1,6 +1,6 @@
 # Exploratory Data Analysis Assignment 1
 
-This is my submission for the first class assignment of Exploratory Data Analysis. This repo contains four R scripts (`plot1.R`, `plot2.R`, etc.), each of which creates a plot image (`plot1.png`, `plot2.png`, etc.).
+This is my submission for the first class assignment of Exploratory Data Analysis. This repo contains four R scripts (`plot1.R`, `plot2.R`, etc.), each of which creates a plot image (`plot1.png`, `plot2.png`, etc.). The plot images are also included.
 
 The scripts all *assume that you have downloaded* the required data ([found here](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)) into a subdirectory of the working directory called "data".
 
