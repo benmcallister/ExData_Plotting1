@@ -6,11 +6,8 @@ data <- read.csv("./data/household_power_consumption.txt", header = TRUE, sep = 
 ## subset the data for only Feb 1-2 2007
 data <- subset(data, Date == "1/2/2007" | Date == "2/2/2007")
 
-## convert the class of the Date column to Date
-data$Date <- as.Date(data$Date, "%d/%m/%Y")
-
-
 ## create a histogram of Global Active Power
 png(filename = "plot1.png", width = 480, height = 480)
+par(bg = "transparent")
 hist(data$Global_active_power, col = "red", main = "Global Active Power", xlab  = "Global Active Power (kilowatts)")
 dev.off()
