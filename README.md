@@ -1,3 +1,12 @@
+### Exploratory Data Analysis Assignment 1
+
+This is my submission for the first class assignment of Exploratory Data Analysis. This repo contains four R scripts (`plot1.R`, `plot2.R`, etc.), each of which creates a plot image (`plot1.png`, `plot2.png`, etc.).
+
+The scripts all *assume that you have downloaded* the required data ([found here](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)) into a subdirectory of the working directory called "data".
+
+While the R scripts do *not* download the original data required to make the plots, they *do* read the *entire dataset* into memory. If you choose to run these scripts, the data will occupy just under 145 MB of memory. After subsetting for only the required dates, the data will occupy just under 0.3 MB of memory.
+
+
 ## Introduction
 
 This assignment uses data from
