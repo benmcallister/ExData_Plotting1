@@ -2,12 +2,16 @@
 
 This is my submission for the first class assignment of Exploratory Data Analysis. This repo contains four R scripts (`plot1.R`, `plot2.R`, etc.), each of which creates a plot image (`plot1.png`, `plot2.png`, etc.). The plot images are also included.
 
-The scripts all *assume that you have downloaded* the required data ([found here](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)) into a subdirectory of the working directory called "data".
+The scripts all assume that you have downloaded the required data ([found here](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)) into a subdirectory of the working directory called "data".
 
-While the R scripts do *not* download the original data required to make the plots, they *do* read the *entire dataset* into memory. If you choose to run these scripts, the data will occupy just under 145 MB of memory. After subsetting for only the required dates, the data will occupy just under 0.3 MB of memory.
+While the R scripts do not download the original data required to make the plots, they *do* read the entire dataset into memory. If you choose to run these scripts, the data will occupy just under 145 MB of memory. After subsetting for only the required dates, the data will occupy just under 0.3 MB of memory.
 
-The assignment instructions are below.
+The assignment instructions are pasted below.
 
+
+## REGARDING BACKGROUND COLOR OF PLOTS:
+
+I have **purposely** set the background color of all of my plots to "white", as opposed to "transparent." I did so after reading [this thread](https://class.coursera.org/exdata-004/forum/thread?thread_id=57#post-206). While strictly speaking, the background colors that Professor Peng posted are transparent, I am assuming that many students do not know about the difference between transparent and white backgrounds. Because this distinction seems trivial relative to the class content, and because furthermore many students who don't know about transparency might mistakenly downgrade a plot with a transparent background, this seemed like a reasonable decision. 
 
 ## Introduction
 
