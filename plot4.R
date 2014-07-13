@@ -10,12 +10,13 @@ data <- subset(data, Date == "1/2/2007" | Date == "2/2/2007")
 data$datetime <- paste(data$Date, data$Time)
 data$datetime <- strptime(data$datetime, "%d/%m/%Y %H:%M:%S")
 
-
-## open a png file
+## make four plots
+# open a png file
 png(filename = "plot4.png", width = 480, height = 480)
 
 # set the grid for display
 par(mfrow = c(2, 2))
+
 # make the first plot
 with(data, plot(datetime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power"))
 
@@ -31,5 +32,5 @@ legend("topright", legend = names(data)[7:9], lty= "solid", col = c("black", "re
 # make the fourth plot
 with(data, plot(datetime, Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power"))
 
-# close the pgn file
+# close the png file
 dev.off()
