@@ -11,10 +11,25 @@ data$datetime <- paste(data$Date, data$Time)
 data$datetime <- strptime(data$datetime, "%d/%m/%Y %H:%M:%S")
 
 
-## create a line graph for three types of Sub_metering
-png(filename = "plot3.png", width = 480, height = 480)
+## open a png file
+png(filename = "plot4.png", width = 480, height = 480)
+
+# set the grid for display
+par(mfrow = c(2, 2))
+# make the first plot
+with(data, plot(datetime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power"))
+
+# make the second plot
+with(data, plot(datetime, Voltage, type = "l", xlab = "datetime", ylab = "Voltage"))
+
+# make the third plot
 with(data, plot(datetime, Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering"))
 with(data, lines(datetime, Sub_metering_2, col = "red"))
 with(data, lines(datetime, Sub_metering_3, col = "blue"))
-legend("topright", legend = names(data)[7:9], lty= "solid", col = c("black", "red", "blue"))
+legend("topright", legend = names(data)[7:9], lty= "solid", col = c("black", "red", "blue"), bty = "n")
+
+# make the fourth plot
+with(data, plot(datetime, Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power"))
+
+# close the pgn file
 dev.off()

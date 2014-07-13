@@ -10,7 +10,7 @@ data <- subset(data, Date == "1/2/2007" | Date == "2/2/2007")
 data$datetime <- paste(data$Date, data$Time)
 data$datetime <- strptime(data$datetime, "%d/%m/%Y %H:%M:%S")
 
-## create a histogram of Global Active Power
+## create a line graph of Global active power
 png(filename = "plot2.png", width = 480, height = 480)
 with(data, plot(datetime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
 dev.off()
